@@ -4,7 +4,7 @@
     <h1>
       <router-link :to="{name:'home', query: $route.query}">
         <img class="logo" src="/img/logo/rainbow_star.svg">
-        <span v-if="$route.name==='home'">Sabian Calculator</span>
+        <span v-if="$route.name==='home'">Sabian Calculator Mini</span>
       </router-link>
 
       <div v-if="$route.name && $route.name.match(/^symbols/)" id="symbol_search">

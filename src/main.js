@@ -14,6 +14,9 @@ const i18n = new VueI18n({
   messages: data
 })
 
+import VueScrollTo from 'vue-scrollto'
+Vue.use(VueScrollTo)
+
 import VueCookies from 'vue-cookies'
 Vue.use(VueCookies)
 

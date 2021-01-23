@@ -8,6 +8,7 @@ let data = {en: en}
 if(window.lang !== 'en'){
   const local  = require('@/lang/main_'+window.lang+'.yml')
   local.sabian = require('@/lang/sabian_'+window.lang+'.yml')
+  local.sabian_text = require('@/lang/sabian_text_'+window.lang+'.yml')
 
   data[window.lang] = local
 }

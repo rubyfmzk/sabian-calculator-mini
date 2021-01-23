@@ -11,10 +11,6 @@
       <a :href="'https://twitter.com/'+$t('common.twitter')" target="_blank">
         <img src="/img/icon/twitter.svg">
       </a>
-
-      <a href="https://www.facebook.com/rubyfumizki/" target="_blank">
-        <img src="/img/icon/facebook.svg">
-      </a>
     </p>
     <p class="copyright">©2021 Sabian Calculator All rights reserved.</p>
   </footer>

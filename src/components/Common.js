@@ -183,7 +183,7 @@ export default{
     },
 
 
-    addPlanetsInfo(planets, houses){
+    addPlanetsInfo(planets){
       if(!this.current_planet_list) this.setAstronomicalModel()
 
       if(!planets) planets = {}
@@ -196,40 +196,6 @@ export default{
           planets[p] = Object.assign(planets[p], this.getDegreeInfo(planets[p].longitude))
         }
       })
-
-      if(houses && houses[10]){
-        planets.Asc = {}
-        planets.Asc.longitude = houses[1]
-        planets.Asc = Object.assign(planets.Asc, this.getPlanetInfo('Asc'))
-        planets.Asc = Object.assign(planets.Asc, this.getDegreeInfo(houses[1]))
-        planets.Mc = {}
-        planets.Mc.longitude = houses[10]
-        planets.Mc = Object.assign(planets.Mc, this.getPlanetInfo('Mc'))
-        planets.Mc = Object.assign(planets.Mc, this.getDegreeInfo(houses[10]))
-
-        if(this.$route.query.m === 'asc_aries' || this.$route.query.m === 'mc_capricorn'){
-          let house_sabian_planets = {}
-
-          this.current_planet_list.forEach((p)=>{
-            house_sabian_planets[p] = {}
-            house_sabian_planets[p] = Object.assign(house_sabian_planets[p], this.getPlanetInfo(p))
-
-            if(planets[p].longitude){
-              if(this.$route.query.m === 'asc_aries'){
-                house_sabian_planets[p].longitude = planets[p].longitude - houses[1]
-              }
-              else if(this.$route.query.m === 'mc_capricorn'){
-                house_sabian_planets[p].longitude = planets[p].longitude - houses[10] + 270
-              }
-              if(house_sabian_planets[p].longitude < 0) house_sabian_planets[p].longitude += 360
-              
-              house_sabian_planets[p] = Object.assign(house_sabian_planets[p], this.getDegreeInfo(house_sabian_planets[p].longitude))
-            }
-          })
-
-          return house_sabian_planets
-        }
-      }
 
       return planets
     },
@@ -365,7 +331,7 @@ export default{
       planet.sign_degree = this.getSignDegree(longitude)
       planet.degree_minute = longitude.getDegreeMinute();
       planet.sabian = this.$t('sabian['+longitude.int()+']')
-      //planet.sabian_description = sabian_descriptions[parseInt(longitude)];
+      planet.sabian_description = window.lang == 'ja' ? this.$t('sabian_text['+longitude.int()+']') : ''
       planet.param = {
         sign: define.SIGN_LIST[(longitude / 30).int()].key,
         degree: (longitude % 30).int() + 1,
@@ -471,43 +437,9 @@ export default{
     },
 
     setAstronomicalModel(){
-      const pl_list = ['n', 'p', 'f']
+      this.current_planet_list = ["Sun", "Moon", "Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"]
 
-      if(this.$route.query.m === 'helio'){
-        pl_list.forEach((i)=>{
-          if(this[i] && this[i].pl) this[i].pl.setHeliocentric();
-        })
-        this.current_planet_list = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"]
-        this.main_planet_list = ["Pluto", "Neptune"]
-        this.$$('html').classList.add('special_astro_model');
-      }
-
-      else{
-        pl_list.forEach((i)=>{
-          if(this[i] && this[i].pl) this[i].pl.unsetHeliocentric();
-        })
-
-        let true_mean_node = this.$cookies.get('true_mean_node') == 1 ? 'MeanNode': 'TrueNode'
-        let true_mean_lilith = this.$cookies.get('true_mean_lilith') == 1 ? 'MeanLilith': 'TrueLilith'
-        this.current_planet_list = ["Sun", "Moon", "Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto", true_mean_node, true_mean_lilith]
-        this.main_planet_list = ["Sun", "Moon"]
-
-        //ハウスサビアン
-        if(this.$route.query.m === 'asc_aries' || this.$route.query.m === 'mc_capricorn'){
-          this.$$('html').classList.add('special_astro_model');
-        }
-
-        //ノーマル
-        else{
-          if(this.$route.query.n &&
-             !this.changeDatetimeQueryFormat(this.$route.query.n, 'unknown_flg')){
-            this.current_planet_list.push('Asc')
-            this.current_planet_list.push('Mc')
-          }
-
-          this.$$('html').classList.remove('special_astro_model');
-        }
-      }
+      this.$$('html').classList.remove('special_astro_model');
     },
 
     setImgCookie(longitude){

@@ -116,7 +116,6 @@ a:hover, a:active, a:focus{
 }
 
 header{
-  background: #191c29;
   padding: 7px 2vw;
   position: fixed;
   top: 0;
@@ -129,6 +128,7 @@ header{
 @media (max-width: 767px){
   header {
     border-bottom: solid 1px #374ba2;
+    background: #000;
   }
 }
 
@@ -161,6 +161,11 @@ header h1 img.logo{
   width: 7vw;
   margin: 0.3vw 0 0 0;
 }
+
+header h1 span {
+    color: #fff;
+    text-shadow: 1px -1px 2px #23305f, -1px 1px 2px #23305f, 1px 1px 2px #23305f, -1px -1px 2px #23305f;
+}
 @media (min-width: 600px) {
   header h1{
     font-size: 32px;
@@ -186,6 +191,15 @@ header h1 img.logo{
   }
 }
 
+@media (max-width: 599px) {
+  header h1 img.logo {
+    width: 35px;
+  }
+  header h1 span {
+    font-size: 20px;
+    margin: 2px 0 0 7px;
+  }
+}
 
 footer{
   background: #000;
@@ -365,51 +379,11 @@ select {
 
 @media (min-width: 768px) {
   article{
-    width: calc(100% + 220px);
-    padding-left: 440px;
-    margin-left: -440px;
-  }
 
-  #calculator_list{
-    width: calc(100% + 220px);
-    padding-left: 440px;
-    margin-left: -440px;
-  }
-
-  #page_nav{
-    height: 100vh;
-    width: 220px;
-    text-align: left;
-  }
-
-  #page_nav_links{
-    bottom: 20px;
-    position: absolute;
-    margin-left: 10px;
   }
 
   footer{
-    width: calc(100% - 220px - 4vw);
-    margin-left: 220px;
     margin-bottom: 0;
-  }
-
-  #page_nav.hide {
-    animation-name: fade-out-nav;
-    animation-duration: 0.3s; 
-    animation-timing-function: ease-out; 
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards; 
-  }
-
-  #page_nav.show {
-    animation-name: fade-in-nav;
-    animation-duration: 0.3s; 
-    animation-timing-function: ease-out; 
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards; 
   }
 
   @keyframes fade-out-nav {
@@ -447,7 +421,6 @@ section {
 
 @media (min-width: 768px) {
   section {
-    padding: 0;
   }
 }
 
@@ -516,9 +489,6 @@ background-image: url(/img/icon/search.svg);
 }
 @media (min-width: 768px){
   #share{
-    width: calc(100% + 220px);
-    padding-left: 440px;
-    margin-left: -440px;
   }
 }
 
@@ -549,4 +519,8 @@ background-image: url(/img/icon/search.svg);
 
 p.not_found{
   margin: -40px 0 50px;
+}
+
+.no-en{
+  
 }

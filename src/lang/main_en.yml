@@ -45,59 +45,6 @@ planet_list:
   Pluto:
     name: Pluto
     description: Opportunity to evolve the soul and bring about a profound change in self
-  TrueNode:
-    name: True Node
-    description: Desire of the soul
-  MeanNode:
-    name: Mean Node
-    description: Desire of the soul
-  TrueLilith:
-    name: True Lilith
-    description: Charm and secrecy
-  MeanLilith:
-    name: Mean Lilith
-    description: Charm and secrecy
-  Asc:
-    name: Ascendant
-    description: ''
-  Mc:
-    name: Medium Coeli
-    description: ''
-aspect_list:
-  Conjunction:
-    name: Conjunction
-  SemiSextile:
-    name: Semi-Sextile
-  Novile:
-    name: Novile
-  SemiSquare:
-    name: Semi-Square
-  Septile:
-    name: Septile
-  Sextile: 
-    name: Sextile
-  Quintile:
-    name: Quintile
-  Bi-Novile:
-    name: Bi-Novile
-  Square:
-    name: Square
-  BiSeptile:
-    name: Bi-Septile
-  Trine: 
-    name: Trine
-  Sesquiquadrate:
-    name: Sesquiquadrate
-  BiQuintile:
-    name: Bi-Quintil
-  Quincunx:
-    name: Quincunx
-  TriSeptile:
-    name: Tri-Septile
-  QuadraNovile:
-    name: Quadra-Novile
-  Opposition:
-    name: Opposition
 common:
   sabian_symbol: Sabian Symbol
   left_nav:
@@ -114,10 +61,8 @@ common:
   not_found: Page not found.
   twitter: RubyFumizki
 home:
-  top:
-    current_sun_position: 'The Sun is now in {sign} {degree}'
-    current_sabian_symbol: 'Current Sabian Symbol:'
-    until_next: '{hour_minute} hours until the next'
+  catch_phrase: Let's take a look at the path of your soul's journey
+  catch_phrase_Supplement: The Sabian symbol, derived from the planets of birth time, may guide the way of your life.
   about:
     title: About Sabian Symbols
     description: <p>Whereas mainstream Astrology divides the zodiac into 12 parts of 30 degrees (each like a slice of pizza), we can look into greater detail with 360 Sabian Symbols. Each degree is assigned an image, its "Sabian Symbol", which is a description of a picture having an interpretation of its hidden, metaphorical meaning. For example, the Sabian Symbol of Libra 1° is ‘A butterfly made perfect by a dart through it’, which can mean to express yourself particularly clearly; it represents a sociable, balanced aspect of Libra.</p><p>Sabian Symbols are images or metaphors, clairvoyantly derived by Elsie Wheeler in 1925, which were proposed and interpreted by Marc Edmund Jones, and also by Dane Rudhyar who reinterpreted them on the basis of his aesthetic insights.</p>
@@ -133,26 +78,7 @@ calculator:
     yes: Yes
     no: No
     calculate: Calculate
-    replace: Main ⇄ Partner
-    partner: Partner
-    forecast: Forecast date
     forecast_text: Calculation at 0:00 UTC
-  set_location:
-    lat_lon: Latitude and Longitude
-    north: North
-    south: South
-    east: East
-    west: West
-    country_city: Region / City
-  how_to_input_city:
-    input_city_name: Input city name (accept a to z)
-    select_area: Select area
-  midpoint: 
-    midpoint_with: Midpoint with {planet}
-  harmonics:
-    harmonic: Harmonic
-    range: Harmonics Number Range
-    not_found: Not found. Please expand the orb in setting.
   month:
     - Jan
     - Feb
@@ -166,87 +92,4 @@ calculator:
     - Oct
     - Nov
     - Dec
-  menu:
-    find_yourself:
-      title: Exploration of yourself
-      list:
-        simple: 
-          title: Sabian Calculator
-          description: If time of birth is not accurate, this shows the range of possibilities
-        midpoint:
-          title: Midpoint
-          description: Sabian Symbols List of Midpoints
-        harmonics:
-          title: Harmonic Resonance
-          description: List of conjunctions in harmonic charts
-    forecast:
-      title: Forecast
-      list:
-        progression:
-          title: Progression
-          description: Sabian Symbols of progression chart
-        solar_arc:
-          title: Solar Arc
-          description: Sabian Symbols of solar arc chart
-    relationship:
-      title: Relationship
-      list:
-        composite:
-          title: Composite
-          description: Sabian Symbols List of composite chart
-  sorry_house_sabian: Sorry. You can't use it with House Sabian mode.
-setting:
-  orb:
-    title: Orbs
-    midpoint: 
-      title: Midpoint
-      description: For aspects between midpoints and your planets
-    harmonics:
-      title: Harmonics
-      description: For conjunctions in the harmonic charts
-  true_mean:
-    title: True/Mean
-    true_node: True Node
-    mean_node: Mean Node
-    true_lilith: True Lilith
-    mean_lilith: Mean Lilith
-  astronomical_model:
-    title: Horoscope Type
-    geocentric: Geocentric (default)
-    heliocentric: Heliocentric
-    house_sabian_asc_aries: House Sabian (ASC = Aries 0˚)
-    house_sabian_mc_capricorn: House Sabian (MC = Capricorn 0˚)
-    house_sabian_asc_aries_short: ASC = Aries 0˚
-    house_sabian_mc_capricorn_short: MC = Capricorn 0˚
-  language:
-    title: Language
-polygon_list:
-  cross:
-    name: Sabian Cross
-    description: opposition and square
-  pentagram:
-    name: Pentagram
-    description: quintile and bi-quintile
-  hexagram:
-    name: Hexagram
-    description: multiples of sextile
-  septagram:
-    name: Septagram
-    description: multiples of septile
-  octagram:
-    name: Octagram
-    description: multiples of semi-square
-  nonagram:
-    name: Nonagram
-    description: multiples of novile
-symbol_list:
-  five_degrees_group:
-    title: 5 degrees group
-    description: contiguous 5 degrees Sabian Symbols make themselves obvious
-  antiscion:
-    title: Antiscion
-    description: Equal distance relationship from Cancer 0˚ (Capricorn 0˚)
-  contra_antiscion:
-    title: Contra-Antiscion
-    description: Equal distance relationship from Aries 0˚ (Libra 0˚)
 

@@ -1,0 +1,437 @@
+/* 
+ * 共通
+ */
+hr{
+    border: 1px solid #444;
+}
+
+/* 
+ * タイトル
+ */
+#home_title{
+    margin: 150px 0 0;
+}
+#home_title h2{
+    margin: 0 0 20px;
+}
+
+/* 
+ * 説明
+ */
+
+#home_article{
+    width: 600px;
+    margin: 0 auto 50px;
+    padding: 50px 0 0;
+}
+#home_article div{
+    margin: 15px 0 0;
+}
+#home_about p{
+    margin: 0 0 15px;
+}
+@media (max-width: 767px){
+  #home_article{
+    width: auto;
+  }
+}
+
+/* 
+ * 入力
+ */
+#calculator_input{
+    background: #191c29;
+    border: 1px solid #374ba2;
+    padding: 20px;
+    width: 600px;
+    margin: 70px auto 0;
+}
+.set_param dl{
+  margin: auto;
+  max-width: 600px;
+}
+
+.set_param dt{
+  vertical-align: top;
+}
+
+.set_param span.large{
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px){
+  .set_param dt{
+    display: inline-block;
+    width: 280px;
+  }
+
+  .set_param dd{
+    display: inline-block;
+    width: calc(100% - 326px);
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px){
+  #calculator_input{
+    width: 84vw;
+  }
+  .set_param dl{
+    margin: auto;
+    max-width: 320px;
+  }
+
+  .set_param dt{
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .set_param dd{
+    width: 100%;
+    text-align: center;
+    margin: 0 0 40px 0;
+  }
+}
+
+
+/* 
+ * 結果
+ */
+
+#result {
+  margin-top: 100px;
+  position: relative;
+  height: auto;
+}
+
+#result #res_message{
+    padding: 50px 0 30px 0;
+    border-top: solid 1px #827b65;
+}
+
+#result .res_item{
+  padding: 30px 0 60px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#result img{
+    max-width: 400px;
+    width: 80%;
+    margin: 20px 0 20px 0;
+}
+
+#result .great_title_area {
+  padding: 50px 0 44px;
+}
+
+#result .great_title {
+  font-size: 28px;
+  line-height: 1em;
+}
+
+#result .title_area{
+  margin: 50px 0 44px;
+  line-height: 1.1em;
+}
+
+#result .title{
+  font-family: 'EB Garamond', 'Noto Serif JP', serif;
+  font-size: 24px;
+}
+
+.ja #result .title{
+  font-family: 'EB Garamond', 'Noto Serif JP', serif;
+}
+
+#result .before_img_area .title{
+  padding: 0.3em 0;
+}
+
+#result .title_description{
+  font-family: 'EB Garamond', 'Noto Serif JP', serif;
+  margin: 14px 0 0 0;
+}
+
+#result .just_before_img{
+    margin: 30px 0 0 0;
+}
+
+#result .res_item .title img.planet_icon{
+    width: 20px;
+    vertical-align: top;
+    margin: 0 8px 0 8px;
+}
+
+.ja #result .res_item .title img.planet_icon{
+    width: 20px;
+    vertical-align: unset;
+}
+
+#result .word{
+  font-size: 16px;
+  line-height: 1.3em;
+  padding: 4px;
+}
+
+#result .many_res_wrap .res_item {
+  padding: 0px 5px 60px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#result .res_pair_wrap .res_item{
+    width: 44%;
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1vw 50px 1vw;
+}
+
+#result .res_pair_wrap img{
+  width: 100%;
+}
+
+#result .res_item img.planet_icon{
+    width: 15px;
+    vertical-align: text-top;
+    margin: 0 4px 0 4px;
+}
+
+#result img.planet_icon.large{
+    width: 24px;
+    padding: 0;
+    position: absolute;
+    margin: 3px 0 0 -50px;
+}
+
+.ja #result img.planet_icon.large{
+    margin: 2px 0 0 -50px;
+}
+
+#result #res_title {
+    margin: 0 0 36px;
+    padding: 0;
+}
+
+#result #res_title h2{
+    font-size: 20px;
+}
+
+#result table{
+  margin: auto;
+}
+
+#res_name{
+    margin: 30px 0 0;
+    height: 27px;
+    display: block;
+}
+
+.res_name{
+    height: 27px;
+    display: block;
+}
+
+@media (min-width: 960px) {
+  #res_text_wrap{
+    width: 800px;
+    margin: auto;
+  }
+}
+@media (max-width: 767px) {
+  .partner #res_date_time,
+  .forecast #res_date_time
+  {
+    top: 0.5vw;
+  }
+  .partner #res_date_time_p,
+  .forecast #res_date_time_f
+  {
+    top: 4.5vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .many_res_wrap .res_item:nth-child(2n) {
+    margin-left: 3%; 
+  }
+  .many_res_wrap .res_item{
+    width: 70%;
+  }
+  .many_res_wrap .res_item img{
+    height: auto;
+  }
+  .many_res_wrap .res_item{
+    width: 45%;
+  }
+/*  .many_res_wrap .res_item img{
+    height: 43vw;
+  }*/
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  .many_res_wrap .res_item{
+    width: 50%;
+  }
+/*  .many_res_wrap .res_item img{
+    height: 50vw;
+  }*/
+  .many_res_wrap .res_item{
+    width: 30%;
+  }
+/*  .many_res_wrap .res_item img{
+    height: 28.5vw;
+  }*/
+  .many_res_wrap .res_item:nth-child(3n) {
+    margin-left: 3%; 
+  }
+  .many_res_wrap .res_item:nth-child(3n+2) {
+    margin-left: 3%; 
+  }
+}
+
+@media (min-width: 960px) {
+  .many_res_wrap .res_item{
+    width: 35%;
+  }
+/*  .many_res_wrap .res_item img{
+    height: 35vw;
+  }*/
+  .many_res_wrap .res_item{
+    width: 22%;
+  }
+/*  .many_res_wrap .res_item img{
+    height: 21vw;
+  }*/
+  .many_res_wrap .res_item:nth-child(4n) {
+    margin-left: 2%; 
+  }
+  .many_res_wrap .res_item:nth-child(4n+2) {
+    margin-left: 2%; 
+  }
+  .many_res_wrap .res_item:nth-child(4n+3) {
+    margin-left: 2%; 
+  }
+}
+
+#footer_nav{
+  text-align: center;
+  padding: 50px 0 50px;
+}
+
+#title h1 + p{
+  margin: 20px auto 20px;
+}
+
+#title p{
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.3em
+}
+
+.after_img_area > div{
+    margin: 0 0 30px 0;
+}
+.after_img_area div .symbol_title{
+    font-size: 20px;
+    margin: 0 0 6px;
+}
+
+
+/* 
+ * 曼荼羅
+ */
+#geo_mandala{
+  position: relative;
+  height: 150vw;
+}
+#geo_mandala div{
+  position: absolute;
+  width: 28vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#geo_mandala div img{
+  margin: 0;
+  width: 100%;
+}
+#geo_mandala .Neptune{
+  left: 60vw;
+  top: 10vw;
+}
+#geo_mandala .Uranus{
+  right: 60vw;
+  top: 20vw;
+}
+#geo_mandala .Saturn{
+  top: 30vw;
+}
+#geo_mandala .Jupiter{
+  left: 60vw;
+  top: 40vw;
+}
+#geo_mandala .Mars{
+  right: 60vw;
+  top: 50vw;
+}
+#geo_mandala .Sun{
+  top: 60vw;
+}
+#geo_mandala .Venus{
+  left: 60vw;
+  top: 70vw;
+}
+#geo_mandala .Mercury{
+  right: 60vw;
+  top: 80vw;
+}
+#geo_mandala .Moon{
+  top: 90vw;
+}
+
+@media (min-width: 768px) {
+  #geo_mandala{
+    height: 700px;
+  }
+  #geo_mandala div{
+    width: 140px;
+  }
+  #geo_mandala .Neptune{
+    left: 300px;
+    top: 50px;
+  }
+  #geo_mandala .Uranus{
+    right: 300px;
+    top: 100px;
+  }
+  #geo_mandala .Saturn{
+    top: 150px;
+  }
+  #geo_mandala .Jupiter{
+    left: 300px;
+    top: 200px;
+  }
+  #geo_mandala .Mars{
+    right: 300px;
+    top: 250px;
+  }
+  #geo_mandala .Sun{
+    top: 300px;
+  }
+  #geo_mandala .Venus{
+    left: 300px;
+    top: 350px;
+  }
+  #geo_mandala .Mercury{
+    right: 300px;
+    top: 400px;
+  }
+  #geo_mandala .Moon{
+    top: 450px;
+  }
+}
