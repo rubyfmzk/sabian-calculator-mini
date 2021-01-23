@@ -1,28 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ComponentHeader></ComponentHeader>
+    <router-view></router-view>
+    <ComponentFooter></ComponentFooter>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ComponentHeader from '@/components/ComponentHeader.vue'
+import ComponentFooter from '@/components/ComponentFooter.vue'
+import Mixin from '@/components/Common'
 
 export default {
-  name: 'App',
+  mixins:[Mixin],
   components: {
-    HelloWorld
-  }
+    ComponentHeader,
+    ComponentFooter,
+  },
+
+  data () {
+    return {
+      path: {
+        en: '/',
+        ja: '/ja',
+      },
+    }
+  },
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped lang="scss">
+@import url("assets/css/common.scss");
 </style>

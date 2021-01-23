@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PWZJCJV');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <script type="text/javascript" src="/Pluto.0.3.min.js"></script>
+    <script>
+      if(location.pathname.match(/^\/ja/)){
+        window.lang = 'ja'
+        window.lang_prefix = '/ja'
+      }
+      else{
+        window.lang = 'en'
+        window.lang_prefix = ''
+      }
+
+      window.toLang = function (lang){
+        let pathname = window.location.pathname
+              .replace('/ja', '')
+        if(lang + pathname == '') pathname = '/'
+        window.location.href = lang + pathname + window.location.search
+      }
+    </script>
   </head>
   <body>
     <noscript>

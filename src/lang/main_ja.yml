@@ -1,0 +1,306 @@
+sign_list:
+  - 牡羊座
+  - 牡牛座
+  - 双子座
+  - 蟹座
+  - 獅子座
+  - 乙女座
+  - 天秤座
+  - 蠍座
+  - 射手座
+  - 山羊座
+  - 水瓶座
+  - 魚座
+planet_list:
+  Sun:
+    name: 太陽
+    description: 人生の指針・課題
+  Earth:
+    name: 地球
+    description: 地球に生まれた理由
+  Moon:
+    name: 月
+    description: 癒し・無意識
+  Mercury: 
+    name: 水星
+    description: 知性・情報伝達
+  Venus:
+    name: 金星
+    description: 愛・美意識
+  Mars:
+    name: 火星
+    description: 情熱・闘争心
+  Jupiter:
+    name: 木星
+    description: 可能性を広げる道筋
+  Saturn:
+    name: 土星
+    description: 社会的責任・秩序
+  Uranus:
+    name: 天王星
+    description: 現状を打破する究極の知恵
+  Neptune:
+    name: 海王星
+    description: 神秘体験を得て理解する機会
+  Pluto:
+    name: 冥王星
+    description: 魂を進化させ自己に深い変化をもたらす機会
+  TrueNode:
+    name: ノード(True)
+    description: 魂の願望
+  MeanNode:
+    name: ノード(Mean)
+    description: 魂の願望
+  TrueLilith:
+    name: リリス(True)
+    description: 魅力・秘めごと
+  MeanLilith:
+    name: リリス(Mean)
+    description: 魅力・秘めごと
+  Asc:
+    name: ASC
+    description: ''
+  Mc:
+    name: MC
+    description: ''
+aspect_list:
+  Conjunction:
+    name: コンジャンクション
+  SemiSextile:
+    name: セミセクスタイル
+  Novile:
+    name: ノーバイル
+  SemiSquare:
+    name: セミスクエア
+  Septile:
+    name: セプタイル
+  Sextile:
+    name: セクスタイル
+  Quintile:
+    name: クインタイル
+  Bi-Novile:
+    name: バイノーバイル
+  Square:
+    name: スクエア
+  BiSeptile:
+    name: バイセプタイル
+  Trine:
+    name: トライン
+  Sesquiquadrate:
+    name: セスキコードレイト
+  BiQuintile:
+    name: バイクインタイル
+  Quincunx:
+    name: クインカンクス
+  TriSeptile:
+    name: トライセプタイル
+  QuadraNovile:
+    name: クワドラノーバイル
+  Opposition:
+    name: オポジション
+common:
+  sabian_symbol: サビアンシンボル
+  left_nav:
+    data: 日時
+    mode: 設定
+    calculators: 計算機
+  page_nav:
+    calculator: 計算機
+    symbols: シンボル一覧
+    setting: 設定
+  share:
+    normal: ページをシェア
+    copied: URLをコピーしました
+  not_found: お探しのページは見つかりませんでした。
+  twitter: rubyfmzk
+home:
+  top:
+    current_sun_position: 太陽はいま{sign}{degree}度
+    current_sabian_symbol: サビアンシンボルは
+    until_next: 次の度数まであと{hour}時間{minute}分
+  about:
+    title: サビアンシンボルとは
+    description: <p>西洋占星術は黄道をピザのように30度ずつ12の星座に分割しますが、1度ずつ細分化して360のイメージを割り当てたものがサビアンシンボルです。例えば天秤座1度のサビアンシンボルは「突き通す針により完璧にされた蝶」で分かりやすく自分を表現することを意味していますが、社交的でバランス感覚に優れた天秤座の一側面を表しています。</p><p>サビアンシンボルは1925年にエルシー・ウィーラーによって透視された隠喩や心象で、マーク・エドマンド・ジョーンズによって提案そして解釈され、デーン・ルディヤーの美的洞察力に基づいて再解釈されたものです。</p>
+calculator:
+  datetime_view: '{year}年{month}月{day}日 {hour}:{minute}'
+  date_view: '{year}年{month}月{day}日'
+  set_datetime:
+    year_month_day: 日付
+    hour_minute: 時刻
+    unknown_time: 時刻不明
+    timezone: タイムゾーン
+    summertime: サマータイム
+    yes: Yes
+    no: No
+    calculate: 計算する
+    replace: 自分 ⇄ 相手
+    partner: パートナー
+    forecast: 予測する日
+    forecast_text: UTC(協定世界時)の午前0:00で計算します。
+  how_to_input_city:
+    input_city_name: 都市名を入力 (a〜z)
+    select_area: 地域から選択
+  set_location:
+    lat_lon: 緯度経度
+    north: 北緯
+    south: 南緯
+    east: 東経
+    west: 西経
+    country_city: 地域 / 都市
+  midpoint: 
+    midpoint_with: '{planet}との中間点'
+  harmonics:
+    harmonic: ハーモニック
+    range: ハーモニックナンバーを選択
+    not_found: 見つかりませんでした。設定でオーブを拡大してください。
+  month:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - '7'
+    - '8'
+    - '9'
+    - '10'
+    - '11'
+    - '12'
+  menu:
+    find_yourself:
+      title: 自己の探求
+      list:
+        simple: 
+          title: サビアン計算機
+          description: 時刻が不明の場合、可能性のあるサビアンシンボル一覧を表示
+        midpoint:
+          title: ハーフサム
+          description: ハーフサムのサビアンシンボル
+        harmonics:
+          title: ハーモニクス
+          description: ハーモニクスのコンジャンクションを一覧で表示
+    forecast:
+      title: 未来予測
+      list:
+        progression:
+          title: プログレス
+          description: プログレス(進行図)のサビアンシンボル
+        solar_arc:
+          title: ソーラーアーク
+          description: ソーラーアークのサビアンシンボル
+    relationship:
+      title: 相性
+      list:
+        composite:
+          title: コンポジット
+          description: コンポジットチャートのサビアンシンボル
+setting:
+  orb:
+    title: オーブ
+    midpoint: 
+      title: ハーフサム
+      description: 中間点と天体とのオーブ
+    harmonics:
+      title: ハーモニクス
+      description: ハーモニックチャート上のコンジャンクション
+  true_mean:
+    title: トゥルー/ミーン
+    true_node: トゥルー・ノード
+    mean_node: ミーン・ノード
+    true_lilith: トゥルー・リリス
+    mean_lilith: ミーン・リリス
+  astronomical_model:
+    title: ホロスコープタイプ
+    geocentric: ジオセントリック（通常）
+    heliocentric: ヘリオセントリック
+    house_sabian_asc_aries: ハウスサビアン（ASC = 牡羊座0度）
+    house_sabian_mc_capricorn: ハウスサビアン（MC = 山羊座0度）
+    house_sabian_asc_aries_short: ASC = 牡羊座0˚
+    house_sabian_mc_capricorn_short: MC = 山羊座0˚
+  language:
+    title: 言語
+polygon_list:
+  cross:
+    name: クロス
+    description: オポジションとスクエア
+  pentagram:
+    name: 五芒星
+    description: クインタイルとバイクインタイル
+  hexagram:
+    name: 六芒星
+    description: セクスタイルの倍数
+  septagram:
+    name: 七芒星
+    description: セプタイルの倍数
+  octagram:
+    name: 八芒星
+    description: セミスクエアの倍数
+  nonagram:
+    name: 九芒星
+    description: ノーバイルの倍数
+midpoint_meaning:
+  Sun:
+    Moon: 裏表を統合した自己
+    Mercury: 意思の伝達手段 
+    Venus: 愛と美の表現 
+    Mars: 男性性・主張 
+    Jupiter: 成長 
+    Saturn: 正義 
+    Uranus: 独立心 
+    Neptune: 人生のビジョン 
+    Pluto: 強固な意志・底力 
+  Moon:
+    Mercury: 心の伝達手段 
+    Venus: 女性性・共感 
+    Mars: 闘争心・怒り
+    Jupiter: 心の成長
+    Saturn: 感情の制御
+    Uranus: 自己の特別視 
+    Neptune: 夢・空想を楽しむ
+    Pluto: 狂信 
+  Mercury: 
+    Venus: 楽しみや美の発見
+    Mars: 利発
+    Jupiter: 博識
+    Saturn: 聡明
+    Uranus: 発明・テクノロジー
+    Neptune: インスピレーションの知覚
+    Pluto: 分析力
+  Venus:
+    Mars: 湧き上がる情動
+    Jupiter: 華やかさ
+    Saturn: 伝統芸術
+    Uranus: 一目惚れ・尖った個性
+    Neptune: 夢を演出
+    Pluto: 美意識や快楽の追求
+  Mars:
+    Jupiter: 社会的野心
+    Saturn: 逆境での抵抗力
+    Uranus: 武器
+    Neptune: 精神世界の活用
+    Pluto: エンジン
+  Jupiter:
+    Saturn: 現代社会の代表になる領域
+    Uranus: 突破口
+    Neptune: 夢を広げる
+    Pluto: 強靭なリーダーシップ
+  Saturn:
+    Uranus: 社会に対する新奇性
+    Neptune: 理想に向かう努力
+    Pluto: ど根性
+  Uranus:
+    Neptune: 全人類的な理想
+    Pluto: 世界的な変革
+  Neptune:
+    Pluto: サイキック能力
+symbol_list:
+  five_degrees_group:
+    title: 5度グループ
+    description: contiguous 5 degrees Sabian Symbols make themselves obvious
+  antiscion:
+    title: アンティション
+    description: Equal distance relationship from Cancer 0˚ (Capricorn 0˚)
+  contra_antiscion:
+    title: コントラアンティション
+    description: Equal distance relationship from Aries 0˚ (Libra 0˚)
+

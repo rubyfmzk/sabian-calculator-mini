@@ -1,0 +1,80 @@
+Sun:
+  key: Sun
+  lower: sun
+  orbit: 1
+  color: eae9a5
+Earth:
+  key: Earth
+  lower: earth
+Moon:
+  key: Moon
+  lower: moon
+  orbit: 0.0748
+Mercury: 
+  key: Mercury
+  lower: mercury
+  orbit: 0.241
+  color: beced3
+Venus:
+  key: Venus
+  lower: venus
+  orbit: 0.615
+  color: f7d64d
+Mars:
+  key: Mars
+  lower: mars
+  orbit: 1.881
+  color: d64317
+Jupiter:
+  key: Jupiter
+  lower: jupiter
+  orbit: 11.87
+  color: f7cb86
+Saturn:
+  key: Saturn
+  lower: saturn
+  orbit: 29.53216
+  color: f7cb86
+Uranus:
+  key: Uranus
+  lower: uranus
+  orbit: 84.25301
+  color: b8f0f4
+Neptune:
+  key: Neptune
+  lower: neptune
+  orbit: 164.79
+  color: 9fbdff
+Pluto:
+  key: Pluto
+  lower: pluto
+  orbit: 247.7406624
+  color: c8b6dd
+TrueNode:
+  key: TrueNode
+  lower: truenode
+  orbit: 18.5996
+  color: eae9a5
+MeanNode:
+  key: MeanNode
+  lower: truenode
+  orbit: 18.5996
+  color: eae9a5
+TrueLilith:
+  key: TrueLilith
+  lower: lilith
+  orbit: 8.8
+  color: ceb6cb
+MeanLilith:
+  key: MeanLilith
+  lower: lilith
+  orbit: 8.8
+  color: ceb6cb
+Asc:
+  key: Asc
+  lower: asc
+Mc:
+  key: Mc
+  lower: mc
+
+
