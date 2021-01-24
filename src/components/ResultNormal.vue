@@ -11,7 +11,8 @@
 
     <div class="after_img_area">
       <div>
-        <p class="symbol_title" v-if="lang=='ja'">あなたのシンボル</p>
+        <p class="symbol_title" v-if="lang=='ja'">あなたの{{r.name}}のシンボル</p>
+        <p class="symbol_title" v-if="lang=='en'">Your {{r.name}} Symbol</p>
         <p class="sign_degree">{{r.sign_degree}}</p>
         <p class="symbol_name">{{r.sabian}}</p>
       </div>

@@ -46,6 +46,9 @@ hr{
     width: 600px;
     margin: 70px auto 0;
 }
+#calculator_input p{
+    margin: 0 0 15px;
+}
 .set_param dl{
   margin: auto;
   max-width: 600px;
@@ -76,7 +79,7 @@ hr{
 
 @media (max-width: 767px){
   #calculator_input{
-    width: 84vw;
+    width: 75vw;
   }
   .set_param dl{
     margin: auto;
@@ -107,6 +110,10 @@ hr{
   height: auto;
 }
 
+#result h2#result_title{
+    margin: 150px 0 70px;
+}
+
 #result #res_message{
     padding: 50px 0 30px 0;
     border-top: solid 1px #827b65;
@@ -121,7 +128,7 @@ hr{
 #result img{
     max-width: 400px;
     width: 80%;
-    margin: 20px 0 20px 0;
+    margin: 0px 0 35px 0;
 }
 
 #result .great_title_area {
@@ -335,6 +342,7 @@ hr{
 
 .after_img_area > div{
     margin: 0 0 30px 0;
+    font-family: 'EB Garamond', 'Noto Serif JP', serif;
 }
 .after_img_area div .symbol_title{
     font-size: 20px;
@@ -348,6 +356,7 @@ hr{
 #geo_mandala{
   position: relative;
   height: 150vw;
+  margin: 35px 0 0;
 }
 #geo_mandala div{
   position: absolute;

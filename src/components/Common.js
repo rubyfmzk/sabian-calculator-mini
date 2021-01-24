@@ -222,6 +222,8 @@ export default{
         case "TEXT":
           if(unknown_time) return this.changeDatetimeQueryFormat(query, 'TEXT_DATE')
           return this.$t('calculator.datetime_view').replace('{year}', year).replace('{month}', this.getMonth(month)).replace('{day}', day.int()).replace('{hour}', hour).replace('{minute}', minute)
+        case "TEXT2":
+          return this.$t('calculator.datetime_view').replace('{year}', year).replace('{month}', this.getMonth(month)).replace('{day}', day.int()).replace('{hour}', hour).replace('{minute}', minute)
         case "TEXT_DATE":
           return this.$t('calculator.date_view').replace('{year}', year).replace('{month}', this.getMonth(month)).replace('{day}', day.int())
         case "yyyy-MM-dd": 

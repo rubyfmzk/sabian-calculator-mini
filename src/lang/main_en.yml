@@ -63,9 +63,19 @@ common:
 home:
   catch_phrase: Let's take a look at the path of your soul's journey
   catch_phrase_Supplement: The Sabian symbol, derived from the planets of birth time, may guide the way of your life.
+  catch_phrase_Supplement_2: Feel the memory of the soul and the inner message that inspire you from the pictures and symbols.
+  input_your_birthday: Input your birthday.
+  result_birthday: 'Sabian Symbols of {datetime}'
+  your_sabian_mandala: Your Sabian Mandala
   about:
     title: About Sabian Symbols
     description: <p>Whereas mainstream Astrology divides the zodiac into 12 parts of 30 degrees (each like a slice of pizza), we can look into greater detail with 360 Sabian Symbols. Each degree is assigned an image, its "Sabian Symbol", which is a description of a picture having an interpretation of its hidden, metaphorical meaning. For example, the Sabian Symbol of Libra 1° is ‘A butterfly made perfect by a dart through it’, which can mean to express yourself particularly clearly; it represents a sociable, balanced aspect of Libra.</p><p>Sabian Symbols are images or metaphors, clairvoyantly derived by Elsie Wheeler in 1925, which were proposed and interpreted by Marc Edmund Jones, and also by Dane Rudhyar who reinterpreted them on the basis of his aesthetic insights.</p>
+  links:
+    title: Related Websites
+    rubyfmzk: Artist Ruby Fumizki's website
+    rubyfmzk_link: https://rubyfmzk.com/
+    sabian_calculator: Sabian Calculator for professionals
+    sabian_calculator_link: https://sabian-calculator.com/
 calculator:
   datetime_view: '{day}.{month}.{year} {hour}:{minute}'
   date_view: '{day}.{month}.{year}'

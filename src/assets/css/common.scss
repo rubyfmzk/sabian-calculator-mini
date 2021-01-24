@@ -15,8 +15,9 @@ body {
 }
  
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-size: 100%;
+    font-weight: normal;
+    font-size: 100%;
+    line-height: 1.8em;
 }
  
 p {
@@ -151,10 +152,11 @@ header h1{
   word-break: break-all;
 }
 header h1 span{
-  vertical-align: middle;
-  padding: 0 0 0 0vw;
-  margin-top: -0.5vw;
-  display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 0 0vw;
+    margin-top: -0.5vw;
+    display: inline-block;
+    line-height: 1em;
 }
 header h1 img.logo{
   vertical-align: top;
@@ -197,7 +199,7 @@ header h1 span {
   }
   header h1 span {
     font-size: 20px;
-    margin: 2px 0 0 7px;
+    margin: 0px 0 0 7px;
   }
 }
 
@@ -466,6 +468,11 @@ input[type=radio]{
   margin: 0 6px 0 0;
 }
 
+input, select{
+    font-size: 15px;
+    max-width: 140px;
+}
+
 input:disabled{
   background: #acb2cc;
 }
@@ -522,5 +529,5 @@ p.not_found{
 }
 
 .no-en{
-  
+
 }

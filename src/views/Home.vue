@@ -3,6 +3,7 @@
     <section id="home_title">
       <h2>{{ $t('home.catch_phrase') }}</h2>
       <p>{{ $t('home.catch_phrase_Supplement') }}</p>
+      <p>{{ $t('home.catch_phrase_Supplement_2') }}</p>
       <p>
         <a onclick="toLang('')" v-if="lang=='ja'">( Change to English )</a>
         <a onclick="toLang('/ja')" v-if="lang=='en'">( 日本語に変更 )</a>
@@ -10,6 +11,7 @@
     </section>
 
     <section id="calculator_input" class="set_param">
+      <p>{{ $t('home.input_your_birthday') }}</p>
       <dl>
         <dt>{{ $t('calculator.set_datetime.year_month_day') }}</dt>
         <dd><input id="date" type="date" v-model="input.date"></dd>
@@ -32,6 +34,9 @@
     </section>
 
     <section id="result">
+      <h2 id="result_title" v-if="lang=='ja'">{{result.birthday}}の<br>サビアンマンダラ</h2>
+      <h2 id="result_title" v-if="lang=='en'">Sabian Mandala of<br>{{result.birthday}}</h2>
+
       <MandalaGeocentric :result="result.n.planets"></MandalaGeocentric>
       <div id="res_wrap">
         <div v-for="(p, i) in result.current_planet_list" :key="i">
@@ -46,6 +51,16 @@
       <section id="home_about">
         <h2>{{ $t('home.about.title') }}</h2>
         <div v-html="$t('home.about.description')"></div>
+      </section>
+    </article>
+
+    <hr>
+
+    <article id="home_article">
+      <section id="home_links">
+        <h2>{{ $t('home.links.title') }}</h2>
+        <p><a :href="$t('home.links.sabian_calculator_link')" target="_blank">{{ $t('home.links.sabian_calculator') }}</a></p>
+        <p><a :href="$t('home.links.rubyfmzk_link')" target="_blank">{{ $t('home.links.rubyfmzk') }}</a></p>
       </section>
     </article>
   </div>
@@ -196,7 +211,6 @@ export default {
     },
 
     get_input(to){
-console.log(to)
       return {
         date: this.changeDatetimeQueryFormat(to.query.n, "yyyy-MM-dd"),
         time: this.changeDatetimeQueryFormat(to.query.n, "HH:mm"),
@@ -218,7 +232,6 @@ console.log(to)
     },
 
     get_result(){
-console.log(this.addPlanetsInfo( this.n.pl.getPlanets()))
       return {
         n:{
           pl: this.n.pl,
@@ -227,6 +240,7 @@ console.log(this.addPlanetsInfo( this.n.pl.getPlanets()))
           is_unknown: this.changeDatetimeQueryFormat(this.$route.query.n, 'unknown_flg'),
         },
         current_planet_list: this.current_planet_list,
+        birthday: this.changeDatetimeQueryFormat(this.$route.query.n, 'TEXT2'),
       }
     },
 

@@ -62,10 +62,20 @@ common:
   twitter: rubyfmzk
 home:
   catch_phrase: あなたの魂の旅のみちしるべを見てみよう
-  catch_phrase_Supplement: 生年月日の惑星から導かれるサビアンシンボルは、現生での生き方の指針になるかもしれません。
+  catch_phrase_Supplement: 生年月日の惑星から導かれるサビアンシンボルは、現世での生き方の指針になるかもしれません。
+  catch_phrase_Supplement_2: 絵やシンボルからひらめく魂の記憶、内なるメッセージを感じてください。
+  input_your_birthday: 誕生日を入力してください。
+  result_birthday: '{datetime}のサビアンシンボル'
+  your_sabian_mandala: あなたのサビアンマンダラ
   about:
     title: サビアンシンボルとは
     description: <p>西洋占星術は黄道をピザのように30度ずつ12の星座に分割しますが、1度ずつ細分化して360のイメージを割り当てたものがサビアンシンボルです。例えば天秤座1度のサビアンシンボルは「突き通す針により完璧にされた蝶」で分かりやすく自分を表現することを意味していますが、社交的でバランス感覚に優れた天秤座の一側面を表しています。</p><p>サビアンシンボルは1925年にエルシー・ウィーラーによって透視された隠喩や心象で、マーク・エドマンド・ジョーンズによって提案そして解釈され、デーン・ルディヤーの美的洞察力に基づいて再解釈されたものです。</p>
+  links:
+    title: 関連サイト
+    rubyfmzk: 画家 文月ルビーのウェブサイト
+    rubyfmzk_link: https://rubyfmzk.com/ja/
+    sabian_calculator: サビアン計算機プロフェッショナル版
+    sabian_calculator_link: https://sabian-calculator.com/ja/
 calculator:
   datetime_view: '{year}年{month}月{day}日 {hour}:{minute}'
   date_view: '{year}年{month}月{day}日'
