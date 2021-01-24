@@ -62,8 +62,8 @@ common:
   twitter: RubyFumizki
 home:
   catch_phrase: Let's take a look at the path of your soul's journey
-  catch_phrase_Supplement: The Sabian symbol, derived from the planets of birth time, may guide the way of your life.
-  catch_phrase_Supplement_2: Feel the memory of the soul and the inner message that inspire you from the pictures and symbols.
+  catch_phrase_Supplement: The Sabian Symbols, derived from the position of the planets at your time of birth, may guide the path of your life.
+  catch_phrase_Supplement_2: Feel the memory of the soul, and the inner message that inspires you from the pictures and symbols.
   input_your_birthday: Input your birthday.
   result_birthday: 'Sabian Symbols of {datetime}'
   your_sabian_mandala: Your Sabian Mandala
