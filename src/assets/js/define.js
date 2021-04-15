@@ -1,6 +1,6 @@
 const define = {
   IMG_BASE_URL: 'https://s3-ap-northeast-1.amazonaws.com/sabian-symbols/',
-  FULL_SIZE_IMG_BASE_URL: 'https://s3-ap-northeast-1.amazonaws.com/sabian-symbols-full-size/',
+  FULL_SIZE_IMG_BASE_URL: 'https://s3-ap-northeast-1.amazonaws.com/sabian-symbols/1080px/',
   PLANET_ICON_DIR: '/img/planet/',
   SIGN_LIST: [
     {key: "Aries"},
