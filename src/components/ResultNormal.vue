@@ -17,7 +17,8 @@
         <p class="symbol_name">{{r.sabian}}</p>
       </div>
       <div>
-        <p class="symbol_title" v-if="lang=='ja'">あなたの{{r.description}}</p>
+        <p class="symbol_title" v-if="lang=='ja'">{{r.description}}</p>
+        <p class="symbol_title" v-if="lang=='en'">{{r.description}}</p>
         <p class="word">{{r.sabian_description}}</p>
       </div>
     </div>

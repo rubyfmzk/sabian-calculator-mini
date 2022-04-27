@@ -1,7 +1,9 @@
 import en from '@/lang/main_en.yml'
 import sabian_en from '@/lang/sabian_en.yml'
+import sabian_text_en from '@/lang/sabian_text_en.yml'
 
 en.sabian = sabian_en
+en.sabian_text = sabian_text_en
 let data = {en: en}
 
 //言語を追加

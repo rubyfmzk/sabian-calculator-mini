@@ -333,7 +333,7 @@ export default{
       planet.sign_degree = this.getSignDegree(longitude)
       planet.degree_minute = longitude.getDegreeMinute();
       planet.sabian = this.$t('sabian['+longitude.int()+']')
-      planet.sabian_description = window.lang == 'ja' ? this.$t('sabian_text['+longitude.int()+']') : ''
+      planet.sabian_description = this.$t('sabian_text['+longitude.int()+']')
       planet.param = {
         sign: define.SIGN_LIST[(longitude / 30).int()].key,
         degree: (longitude % 30).int() + 1,
